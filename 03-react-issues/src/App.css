@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th,
+td {
+  padding: 0.5em;
+  border: 2px solid #a040ba;
+}
+
+th {
+  font-weight: bold;
+  background-color: #a417a0;
+}
+
+td {
+  text-align: left;
+}
+
+.title {
+  text-align: center; 
+}
+
+a {
+  color: #bc11c5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  text-align: center; /* Agrega el estilo de alineación centrada */
+  margin-bottom: 1em;
+}
