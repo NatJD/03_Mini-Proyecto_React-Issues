@@ -9,6 +9,7 @@ const ListIssues = ({ issues }) => {
             <th>Issue ID</th>
             <th>Title</th>
             <th>User</th>
+            <th>Labels</th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +22,13 @@ const ListIssues = ({ issues }) => {
                 </a>
               </td>
               <td>{issue.user.login}</td>
+              <td>
+                {issue.labels.map((label) => (
+                  <span key={label.id} className='label'>
+                    {label.name}
+                  </span>
+                ))}
+              </td>
             </tr>
           ))}
         </tbody>
