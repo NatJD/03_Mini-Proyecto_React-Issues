@@ -31,7 +31,9 @@ const App = () => {
     <div>
       <h1 className='title'>React Issues</h1>
       <Search handleSearchChange={handleSearch} />
-      <ListIssues issues={filteredIssues} />
+      <div className='table-container'>
+        <ListIssues issues={filteredIssues} />
+      </div>
     </div>
   )
 }
